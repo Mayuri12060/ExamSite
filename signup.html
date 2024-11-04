@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Bake Cake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Account</h1>
+    </header>
+
+    <section class="signup">
+        <form id="signup-form" onsubmit="redirectToLogin(event)">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Create a password">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password">
+
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Log in here</a></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bake Cake. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToLogin(event) {
+            event.preventDefault();
+            window.location.href = "login.html"; // Redirect to login page after signup
+        }
+    </script>
+</body>
+</html>
